@@ -14,7 +14,7 @@ const getAllProducts = async (req, res)=>{
     }
     let apiData= product.find(queryObject);
      if(sort){
-        let sortFix = sort.replace(",").join(" ");
+        let sortFix = sort.split(",").join(" ");
         apiData= apiData.sort(sortFix);
      }
 
