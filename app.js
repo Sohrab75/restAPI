@@ -4,6 +4,9 @@ const cors=require("cors");
 const app = express();
 const connectDb = require('./db/connect')
 const products_route =require('./Routes/Routes')
+const products_review =require('./Routes/Routes1')
+const products_feature =require('./Routes/Routes2')
+
 const PORT = process.env.PORT || 8000;
 
 
@@ -22,7 +25,18 @@ app.get('/', (req, res) => {
 })
 //middleware to set to router
 app.use("/api/products", products_route);
+app.use("/api/reviews", products_review);
+app.use("/api/features", products_feature);
 
+// app.use('/api/products/:featureId', (req, res)=>{
+//     let feature_id =Number(req.query.featureId)
+//     db.collection('products').find({feature_id}).toArray((err, data)=>{
+//         if(err) throw err;
+//         res.send(data);
+//     })
+
+// })
+    
 const start = async()=>{
     try{
         await connectDb(process.env.MONGODB_URL, process);

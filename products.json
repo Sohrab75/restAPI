@@ -1,4 +1,4 @@
- [
+[
     {
         "id":"1",
         "name":"Potato",
@@ -6,10 +6,9 @@
         "type":"Veg",
         "cost":50,
         "quantity":"1Kg",
-        "rating":"4.5",
-        "rating_text":"Very good",
         "location":"Pune",
-        "image":"https://i.ibb.co/DpbZnjz/potatoes-ga6dac239f-640.jpg"
+        "image":"https://i.ibb.co/DpbZnjz/potatoes-ga6dac239f-640.jpg"       
+        
     },
     {
         "id":"2",
@@ -18,10 +17,9 @@
         "type":"Veg",
         "cost":40,
         "quantity":"1Kg",
-        "rating":"4.2",
-        "rating_text":"Very good",
         "location":"Pune",
         "image":"https://i.ibb.co/pPs4203/ginger-gecde27da7-640.jpg"
+        
     },
     {
         "id":"3",
@@ -30,10 +28,9 @@
         "type":"Veg",
         "cost":70,
         "quantity":"1Kg",
-        "rating":"4.1",
-        "rating_text":"Very good",
         "location":"Pune",
         "image":"https://i.ibb.co/Sxy9BLZ/carrot-juice-ge2913f356-640.jpg"
+        
     },
     {
         "id":"4",
@@ -42,10 +39,9 @@
         "type":"Veg",
         "cost":30,
         "quantity":"1Kg",
-        "rating":"4.4",
-        "rating_text":"Very good",
         "location":"Pune",
         "image":"https://i.ibb.co/4RS5tGB/6-cabbage-png-image.png"
+        
     },
     {
         "id":"5",
@@ -54,10 +50,9 @@
         "type":"Veg",
         "cost":90,
         "quantity":"1Kg",
-        "rating":"4.5",
-        "rating_text":"Very good",
         "location":"Pune",
         "image":"https://i.ibb.co/hM0gctk/12-broccoli.png"
+        
     },
     {
         "id":"6",
@@ -66,10 +61,9 @@
         "type":"Fruits",
         "cost":150,
         "quantity":"1Kg",
-        "rating":"4.5",
-        "rating_text":"Very good",
         "location":"Pune",
         "image":"https://i.ibb.co/Sxy9BLZ/carrot-juice-ge2913f356-640.jpg"
+        
     },
     {
         "id":"7",
@@ -78,10 +72,9 @@
         "type":"Fruits",
         "cost":250,
         "quantity":"1Kg",
-        "rating":"4.5",
-        "rating_text":"Very good",
         "location":"Pune",
         "image":"https://i.ibb.co/M7Hp1Ct/grapes.jpg"
+        
     },
     {
         "id":"8",
@@ -90,10 +83,9 @@
         "type":"Fruits",
         "cost":290,
         "quantity":"1Kg",
-        "rating":"4.5",
-        "rating_text":"Very good",
         "location":"Pune",
         "image":"https://i.ibb.co/9rfvWZd/strawberry-juice.jpg"
+        
     },
     {
         "id":"9",
@@ -102,10 +94,9 @@
         "type":"Veg",
         "cost":60,
         "quantity":"1Kg",
-        "rating":"4.3",
-        "rating_text":"Very good",
         "location":"Pune",
         "image":"https://i.ibb.co/yVKhGjt/onions-ga291e7cef-640.jpg"
+        
     },
     {
         "id":"10",
@@ -114,10 +105,9 @@
         "type":"Meat",
         "cost":160,
         "quantity":"1Kg",
-        "rating":"4.3",
-        "rating_text":"Very good",
         "location":"Pune",
         "image":"https://i.ibb.co/WW8875m/fresh-chicken.jpg"
+        
     },
     {
         "id":"11",
@@ -126,10 +116,9 @@
         "type":"Fruits",
         "cost":160,
         "quantity":"1Kg",
-        "rating":"4.3",
-        "rating_text":"Very good",
         "location":"Delhi",
         "image":"https://i.ibb.co/F7ZnK68/orange.jpg"
+        
     }   
 ]
 

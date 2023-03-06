@@ -1,0 +1,34 @@
+[
+    {
+        "_id":"1",
+        "review_name":"Mr. Santosh Kumar",
+        "rating":"4.5",
+        "rating_text":"Very good, Great independent grocery store with a wide variety of gourmet items and hard to find food stuffs. A great butcher offering local seafood and grass fed meats. There a good variety of organic fruits and vegetables but not always the freshest (but I'll admit I'm comparing to local farmer's markets). Best grocery store in Mumbai",
+        "review_img":"https://i.ibb.co/hYWxrBv/review-3.jpg",
+        "review_date":"2022-08-25"
+    },
+    {
+        "_id":"2",
+        "review_name":"Mr. John Deo",
+        "rating":"4.5",
+        "rating_text":"Very good",
+        "review_img":"https://i.ibb.co/FW5cLVJ/review1.jpg",
+        "review_date":"2022-12-25"
+    },
+    {
+        "_id":"3",
+        "review_name":"Dr. Sahgal",
+        "rating":"4.5",
+        "rating_text":"Very good, Good quality products at low cost than any other and all so many variety of products available, Good parking space and having good ambiance.",
+        "review_img":"https://i.ibb.co/5Y33333/review2.jpg",
+        "review_date":"2022-12-25"
+    },
+    {
+        "_id":"4",
+        "review_name":"Mrs. Aishwarya",
+        "rating":"4.5",
+        "rating_text":"Overall Staff is polite and helpful !! All managers are aware of the their products & help customers for their requirements..",
+        "review_img":"https://i.ibb.co/ZHhPg2B/Review2.gif",
+        "review_date":"2022-08-25"
+    }
+]

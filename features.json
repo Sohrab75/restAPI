@@ -1,0 +1,20 @@
+[
+    {
+        "_id": "1",
+        "feature_image":"https://i.ibb.co/cwXwx3Z/mix-vegetable.jpg",
+        "feature_txt":"Fresh from farmhouse and Organic products",
+        "feature_heading":"fresh and Organic"
+    },
+    {
+        "_id": "2",
+        "feature_image":"https://i.ibb.co/98Rp328/rowan-freeman-cl-Ylm-Ca-Qbz-Y-unsplash.jpg",
+        "feature_txt":"free delivery to your home location from 10 AM to 08 PM",
+        "feature_heading":"free Delivery"
+    },
+    {
+        "_id": "3",
+        "feature_image":"https://i.ibb.co/G3HprFG/easy-pmt.jpg",
+        "feature_txt":"Easy mode of pay like UPI, CARD PAYMENT and Paypal",
+        "feature_heading":"easy payment"
+    }
+]

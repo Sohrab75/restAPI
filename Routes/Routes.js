@@ -6,4 +6,7 @@ const { getAllProducts, getAllProductsTesting } = require('../Controllers/contro
 router.route('/').get(getAllProducts);
 router.route('/testings').get(getAllProductsTesting);
 
+
+
+
 module.exports = router;
