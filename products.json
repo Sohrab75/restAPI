@@ -119,6 +119,90 @@
         "location":"Delhi",
         "image":"https://i.ibb.co/F7ZnK68/orange.jpg"
         
+    },
+    {
+        "id":"12",
+        "name":"Milk Pouch",
+        "category_id":"3",
+        "type":"Dairy",
+        "cost":160,
+        "quantity":"1Kg",
+        "location":"Delhi",
+        "image":"https://i.ibb.co/19Kzm14/Milk-Pouch.jpg"
+    },
+    {
+        "id":"13",
+        "name":"Cheese",
+        "category_id":"3",
+        "type":"Dairy",
+        "cost":1160,
+        "quantity":"1Kg",
+        "location":"Delhi",
+        "image":"https://i.ibb.co/YyHky1r/top-view-raclette-dish-with-ingredients-delicious-food.jpg"
+    },
+    {
+        "id":"14",
+        "name":"Butter",
+        "category_id":"3",
+        "type":"Dairy",
+        "cost":460,
+        "quantity":"1Kg",
+        "location":"Delhi",
+        "image":"https://i.ibb.co/CVFdnh5/Butter.jpg"
+    },
+    {
+        "id":"15",
+        "name":"Chicken Leg Piece",
+        "category_id":"4",
+        "type":"Meat",
+        "cost":160,
+        "quantity":"1Kg",
+        "location":"Pune",
+        "image":"https://i.ibb.co/WW8875m/fresh-chicken.jpg"
+        
+    },
+    {
+        "id":"16",
+        "name":"Blue Fancy Jeans",
+        "category_id":"5",
+        "type":"Clothing",
+        "cost":760,
+        "quantity":"1 piece",
+        "location":"Pune",
+        "image":"https://i.ibb.co/k1RcmSk/blue-jeans-fabric-details.jpg"
+        
+    },
+    {
+        "id":"17",
+        "name":"White T-shirts",
+        "category_id":"5",
+        "type":"Clothing",
+        "cost":760,
+        "quantity":"1 piece",
+        "location":"Pune",
+        "image":"https://i.ibb.co/QkrL9kN/man-with-sunglasses-wearing-white-t-shirt-posing.jpg"
+    },
+    {
+        "id":"18",
+        "name":"Banana",
+        "category_id":"2",
+        "type":"Fruits",
+        "cost":290,
+        "quantity":"1Kg",
+        "location":"Pune",
+        "image":"https://i.ibb.co/GMpsxbw/Banana.jpg"
+        
+    },
+    {
+        "id":"19",
+        "name":"Mango",
+        "category_id":"2",
+        "type":"Fruits",
+        "cost":290,
+        "quantity":"1Kg",
+        "location":"Pune",
+        "image":"https://i.ibb.co/FscKMfk/Mango.jpg"
+        
     }   
 ]
 

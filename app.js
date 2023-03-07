@@ -6,6 +6,7 @@ const connectDb = require('./db/connect')
 const products_route =require('./Routes/Routes')
 const products_review =require('./Routes/Routes1')
 const products_feature =require('./Routes/Routes2')
+const products_category =require('./Routes/Routes3')
 
 const PORT = process.env.PORT || 8000;
 
@@ -27,6 +28,7 @@ app.get('/', (req, res) => {
 app.use("/api/products", products_route);
 app.use("/api/reviews", products_review);
 app.use("/api/features", products_feature);
+app.use("/api/categories", products_category)
 
 // app.use('/api/products/:featureId', (req, res)=>{
 //     let feature_id =Number(req.query.featureId)

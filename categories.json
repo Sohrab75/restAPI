@@ -1,0 +1,39 @@
+[
+    {
+        "id":"1",
+        "category_id":"1",
+        "category_name":"vegetables",
+        "category_img":"https://i.ibb.co/0JZy59X/healthy-vegetables-wooden-table.jpg",
+        "category_txt":"Fresh and Healthy Vegetables"
+    },
+    {
+        "id":"2",
+        "category_id":"2",
+        "category_name":"fruits",
+        "category_img":"https://i.ibb.co/34bPd0m/pile-fresh-fruits.jpg",
+        "category_txt":"Fresh and Healthy Fruits"
+
+    },
+    {
+        "id":"3",
+        "category_id":"3",
+        "category_name":"Dairy",
+        "category_img":"https://i.ibb.co/TTXW9gr/common-food-that-can-cause-allergic-reactions-people.jpg",
+        "category_txt":"Fresh and Healthy Dairy products"
+    },
+    {
+        "id":"4",
+        "category_id":"4",
+        "category_name":"Meats",
+        "category_img":"https://i.ibb.co/vcKYDNY/raw-chicken-fillet-with-garlic-pepper-rosemary-wooden-chopping-board.jpg",
+        "category_txt":"Fresh and Healthy Meats and chicken"
+    },
+    {
+        "id":"5",
+        "category_id":"5",
+        "category_name":"Clothing",
+        "category_img":"https://i.ibb.co/NmnDb8N/shop-clothing-clothes-shop-hanger-modern-shop-boutique.jpg",
+        "category_txt":"Best and premium clothes in the market"
+    }
+
+]
