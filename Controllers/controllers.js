@@ -1,12 +1,17 @@
-const product = require('../Model/model')
+const Product = require('../Model/model')
 const review = require('../Model/model2')
 const feature = require('../Model/model1')
 const category = require('../Model/model3')
 
 
 const getAllProducts = async (req, res)=>{
-    const {name, type, sort, select,feature,review} = req.query;
-    const queryObject ={};
+    const {name, type, sort, select,feature,review, categoryId, cost} = req.query;
+    let queryObject ={};
+
+    if (categoryId) {
+        let catId = Number(req.query.categoryId);
+        queryObject = {"category_id":catId};
+    }
 
     if(review){
         queryObject.review={$regex:review, $options:"i"};
@@ -24,7 +29,7 @@ const getAllProducts = async (req, res)=>{
         queryObject.type={$regex:type, $options:"i"};
         
     }
-    let apiData= product.find(queryObject);
+    let apiData= Product.find(queryObject);
      if(sort){
         let sortFix = sort.split(",").join(" ");
         apiData= apiData.sort(sortFix);
@@ -55,9 +60,20 @@ const getAllProducts = async (req, res)=>{
 
 
 const getAllProductsTesting = async (req, res)=>{
-    const products = await product.find(req.query).select("name cost");
-    res.status(200).json({products});
-    
+    const {categoryId} = req.query;
+    const queryObject = {};
+
+    if(categoryId){
+        let catId = Number(req.query.categoryId);
+        queryObject.category_id = catId;
+    }
+
+    try {
+        const products = await Product.find(queryObject);
+        res.status(200).json({products, nbHits:products.length});
+    } catch (error) {
+        res.status(404).json({message:error.message});
+    }
 };
 
 const getAllFeatureData = async (req, res)=>{
