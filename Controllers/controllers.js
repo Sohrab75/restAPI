@@ -5,12 +5,16 @@ const category = require('../Model/model3')
 
 
 const getAllProducts = async (req, res)=>{
-    const {name, type, sort, select,feature,review, categoryId, cost} = req.query;
+    const {name, type, sort, select,feature,review, categoryId,id, cost} = req.query;
     let queryObject ={};
 
     if (categoryId) {
         let catId = Number(req.query.categoryId);
         queryObject = {"category_id":catId};
+    }
+    if(id){
+        let id = Number(req.query.id);
+        queryObject = {"id":id};
     }
 
     if(review){
@@ -57,24 +61,10 @@ const getAllProducts = async (req, res)=>{
     
 };
 
+const getAllProductsTesting = async (rq, res)=>{
+    const myData= await Product.find(req.query).select("name cost")
+}
 
-
-const getAllProductsTesting = async (req, res)=>{
-    const {categoryId} = req.query;
-    const queryObject = {};
-
-    if(categoryId){
-        let catId = Number(req.query.categoryId);
-        queryObject.category_id = catId;
-    }
-
-    try {
-        const products = await Product.find(queryObject);
-        res.status(200).json({products, nbHits:products.length});
-    } catch (error) {
-        res.status(404).json({message:error.message});
-    }
-};
 
 const getAllFeatureData = async (req, res)=>{
     const features =await feature.find(req.query)
