@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const orderSchema = new mongoose.Schema({
-    id:{type: 'string', required: true},
+    id:String,
     prodName:String,
     name:String,
     email:String,
-    phone:Number,
+    phone:String,
     address:String,
     cost: Number,
     orderItem:String
