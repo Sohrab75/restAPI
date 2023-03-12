@@ -2,6 +2,7 @@ const Product = require('../Model/model')
 const review = require('../Model/model2')
 const feature = require('../Model/model1')
 const category = require('../Model/model3')
+const Order = require('../Model/modelOrder')
 
 
 const getAllProducts = async (req, res)=>{
@@ -84,10 +85,17 @@ const getAllCategoryData = async (req, res)=>{
     res.status(200).json({categories});
 }
 
+const getAllOrders = async (req, res)=>{
+    const orders =await Order.find({})
+    console.log(orders)
+    res.status(200).json({orders});
+}
+
 module.exports = {
     getAllProducts,
     getAllProductsTesting,
     getAllFeatureData,
     getAllReviewData,
-    getAllCategoryData
+    getAllCategoryData,
+    getAllOrders
 };

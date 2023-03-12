@@ -9,6 +9,7 @@ const {options3} = require('../Routes/Routes3');
 
 const connectDb =(uri)=>{
     console.log('connectDb');
+
     return mongoose.connect(uri, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
