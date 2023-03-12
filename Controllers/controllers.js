@@ -15,6 +15,7 @@ const getAllProducts = async (req, res)=>{
     if(id){
         let id = Number(req.query.id);
         queryObject = {"id":id};
+        
     }
 
     if(review){

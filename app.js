@@ -24,21 +24,19 @@ app.use(cors(corsOptions));
 app.get('/', (req, res) => {
     res.send('Hello World! this is Live from express');
 })
+
+app.post('/api/products', (req, res) => {
+    // handle the POST request here
+    res.send('POST request received');
+  });
+  
 //middleware to set to router
 app.use("/api/products", products_route);
 app.use("/api/reviews", products_review);
 app.use("/api/features", products_feature);
 app.use("/api/categories", products_category)
 
-// app.use('/api/products/:featureId', (req, res)=>{
-//     let feature_id =Number(req.query.featureId)
-//     db.collection('products').find({feature_id}).toArray((err, data)=>{
-//         if(err) throw err;
-//         res.send(data);
-//     })
 
-// })
-    
 const start = async()=>{
     try{
         await connectDb(process.env.MONGODB_URL, process);
