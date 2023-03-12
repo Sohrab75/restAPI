@@ -47,9 +47,10 @@ app.post('/api/PlaceOrder', async (req, res) => {
         client.close();
         res.status(200).json(result)
         console.log(db);
-        db.collection('orders').insertOne(order).then(result => {
-            res.status(200).json(result);
-        })
+        // db.collection('orders').insertOne(order).then(result => {
+        //     // res.status(200).json(result);
+        //     res.status(200).send('Order placed successfully')
+        // })
     }
     catch(error){
         console.log(error)
