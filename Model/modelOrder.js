@@ -5,9 +5,9 @@ const orderSchema = new mongoose.Schema({
     prodName:String,
     name:String,
     email:String,
-    phone:String,
-    address:String,
     cost: Number,
+    phone:String,
+    address:String,    
     orderItem:String
 
 })
