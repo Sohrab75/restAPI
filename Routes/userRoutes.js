@@ -4,7 +4,7 @@ const router = express.Router();
 const User = require('../Model/userModal');
 // const bcrypt = require("bcrypt")
 // const bcrypt = require('../app.js').bcrypt;
-const bcrypt = require('bcrypt');
+const bcryptjs = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 // User Registration
@@ -18,7 +18,7 @@ router.post('/register', async (req, res) => {
             return res.status(400).json({ message: 'Email already registered' });
         }
 
-        const hashedPassword = await bcrypt.hash(password, 10);
+        const hashedPassword = await bcryptjs.hash(password, 10);
         const newUser = new User({ username, email, password: hashedPassword });
         await newUser.save();
 
@@ -43,7 +43,7 @@ router.post('/login', async (req, res) => {
             return;
         }
 
-        const isPasswordCorrect = await bcrypt.compare(password, user.password);
+        const isPasswordCorrect = await bcryptjs.compare(password, user.password);
 
         if (isPasswordCorrect) {
             console.log(`Login successful: User ${email}`);

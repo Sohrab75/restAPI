@@ -11,7 +11,7 @@ const products_feature = require('./Routes/Routes2');
 const products_category = require('./Routes/Routes3');
 const orderRoute = require('./Routes/RoutesOrder');
 const userRoutes = require('./Routes/userRoutes');
-const bcrypt = require("bcrypt");
+const bcryptjs = require("bcryptjs");
 const saltRounds =10;
 
 
@@ -64,6 +64,6 @@ const start = async () => {
     }
 }
 
-module.exports.bcrypt = bcrypt;
+module.exports.bcryptjs = bcryptjs;
 
 start();
