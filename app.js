@@ -11,6 +11,10 @@ const products_feature = require('./Routes/Routes2');
 const products_category = require('./Routes/Routes3');
 const orderRoute = require('./Routes/RoutesOrder');
 const userRoutes = require('./Routes/userRoutes');
+const bcrypt = require("bcrypt");
+const saltRounds =10;
+
+
 const PORT = process.env.PORT || 8000;
 
 const corsOptions = {
@@ -59,5 +63,7 @@ const start = async () => {
         console.error('Error listening on port');
     }
 }
+
+module.exports.bcrypt = bcrypt;
 
 start();
