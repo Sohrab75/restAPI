@@ -24,8 +24,5 @@
     "mongodb": "^5.1.0",
     "mongoose": "^7.0.0",
     "nodemon": "^3.0.1"
-  },
-  "devDependencies": {
-    "@types/bcrypt": "^5.0.0"
   }
 }
