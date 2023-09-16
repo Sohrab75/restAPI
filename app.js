@@ -12,10 +12,10 @@ const products_category = require('./Routes/Routes3');
 const orderRoute = require('./Routes/RoutesOrder');
 const userRoutes = require('./Routes/userRoutes');
 const bcryptjs = require("bcryptjs");
+const { requireAdmin } = require('./Middleware/authMiddleware');
 const saltRounds =10;
 
-
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 7000;
 
 const corsOptions = {
    origin: '*',
@@ -52,6 +52,7 @@ app.use("/api/features", products_feature);
 app.use("/api/categories", products_category);
 app.use('/api/orders', orderRoute);
 app.use('/api/users', userRoutes);
+// app.use('/admin/products', requireAdmin, adminProductRoutes);
 
 const start = async () => {
     try {

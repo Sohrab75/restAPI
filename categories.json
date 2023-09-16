@@ -34,6 +34,13 @@
         "category_name":"Clothing",
         "category_img":"https://i.ibb.co/NmnDb8N/shop-clothing-clothes-shop-hanger-modern-shop-boutique.jpg",
         "category_txt":"Best and premium clothes in the market"
+    },
+    {
+        "id":"6",
+        "category_id":"6",
+        "category_name":"Wafers",
+        "category_img":"https://i.ibb.co/LzRCHw7/potato-chips-500x500.webp",
+        "category_txt":"Best and premium chips in the market"
     }
 
 ]

@@ -1,12 +1,11 @@
 const mongoose = require('mongoose');
 
 const categorySchema = new mongoose.Schema({
-        review_id:Number,
-        review_name:String,
-        review_text:String,
-        review_date:String,
-        review_img:String,
-        rating:Number
-})
+  id: { type: Number, required: true, unique: true }, // Set validation rules
+  category_id: { type: Number, required: true, unique: true },
+  category_name: String,
+  category_txt: String,
+  category_img: String,
+});
 
 module.exports = mongoose.model('Category', categorySchema);
